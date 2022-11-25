@@ -1,0 +1,4 @@
+FROM openjdk:17
+EXPOSE 9095
+ADD target/kafka-spring-project.jar kafka-spring-project.jar
+ENTRYPOINT ["java", "-jar", "/kafka-spring-project.jar"]
